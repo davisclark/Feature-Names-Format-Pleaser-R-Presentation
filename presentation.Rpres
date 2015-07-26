@@ -1,0 +1,39 @@
+The Dataframe Names Format Pleaser
+========================================================
+author: Davis Clark
+date: July 26, 2015
+
+What is it?
+========================================================
+  
+The Dataframe Names Format Pleaser is a tiny, Shiny application, written using Shiny, R, and HTML.
+
+It makes feature name formatting... pleasing.
+
+The Problem
+========================================================
+Too often, we receive a dataset with column names that include a plethora of ridiculous punctuation marks and capitalization schemes.
+```{r}
+names(mtcars)
+```
+
+Before analysis of said dataset can be done, an irritating amount of work must be had to reformat the column names into a more managable display. 
+
+The Solution
+========================================================
+This formatter eliminates the amount of work required and shortens the time to analysis to near immediacy. 
+```{r, echo=FALSE}
+names(cars)
+```
+
+Features & Future Development
+========================================================
+
+**Features**:
+- Support .csv file formats
+- Includes numerous formatting options to accommodate a wide variety of use cases
+- Allows you to view a preview of the resultant dataframe
+
+**Future developments**:
+- Will include the ability to directly download the newly formatted file
+- Support for XLS files
